@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="imagens/dirigivel.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>VoeAirlines</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-3">
+                    <img src="imagens/logo-voe.png" class="img-thumbnail" alt="logo da VoeAirlines" width="200"
+                        height="200">
+                </div>
+                <div class="col-9">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Aeronaves</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Piloto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Voo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Manutenção</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Cancelamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Emitir Ficha</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="imagens/comercial.jpg" class="d-block w-100" alt="1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Avião Comercial</h5>
+                        <p>Uma representação de um Avião Comercial</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagens/AviaoMilitar.jpg" class="d-block w-100" alt="2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Avião Militar</h5>
+                        <p>Uma representação de um Avião Militar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/cessna-citation-cj3-jessica_widelg.jpeg" class="d-block w-100" alt="3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Avião Executivo</h5>
+                        <p>Uma representação de um Avião Executivo</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br />
+        <div class="container">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-piloto-tab" data-bs-toggle="pill" data-bs-target="#v-pills-piloto" type="button" role="tab" aria-controls="v-pills-piloto" aria-selected="true">Cadastro</button>
+                <button class="nav-link" id="v-pills-voo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-voo" type="button" role="tab" aria-controls="v-pills-voo" aria-selected="false">Regitros</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade" id="v-pills-piloto" role="tabpanel" aria-labelledby="v-pills-piloto-tab" tabindex="0">
+                        <form>
+                            <h3>Cadastro Piloto</h3>
+                            ID <input type="text" disabled><br />
+                            Nome <input type="text"><br />
+                            Matricula <input placeholder="008108" type="text" disabled><br />
+                            Foto <input type="file" ><br />
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-voo" role="tabpanel" aria-labelledby="v-pills-voo-tab" tabindex="0">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Matricula</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Takehiko Inoue</td>
+                                <td>5132</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Marshal D.</td>
+                                <td>1283</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Myamoto Musashi</td>
+                                <td>1283</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Echiro Oda</td>
+                                <td>1723</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <bbr />
+    <header>
+        <div id="topo">
+            suporte: 61 985632365
+         </div> 
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> 
+    <script type="text/javascript" async src="https://www.tempo.com/wid_loader/096962feaf48f4c2ea08be59d89dad38"></script>
+</body>
+
+</html>
