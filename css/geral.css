@@ -125,7 +125,7 @@
   width: 200px;
   height: 212px;
   margin-left: 800px;
-  margin-top:  20px;
+  margin-top:  70px;
   border: 1px solid #999;
 }
 
@@ -134,7 +134,7 @@
   height: 212px;
   margin-left: 1020px;
   margin-top:  -210px;
-  border: 1px solid #999;
+  
 }
 
 .table{
@@ -143,6 +143,15 @@
   margin-left: 117px;
   margin-top: 20px;
   border: 1px solid #999;
+
+}
+
+.mapouter{
+  width: 2000px;
+  height: 20000px;
+ margin-left: -650px;
+ margin-top: 70px;
+
 
 }
 
